@@ -25,12 +25,18 @@ CURSESVER=ncurses-6.0
 CURSESSRC=$(shell pwd)/$(CURSESVER)
 CURSESTARGET=$(LIB)/$(CURSES)
 
+READLINE=libreadline.so.7.0
+READLINEVER=readline-7.0
+READLINESRC=$(shell pwd)/$(READLINEVER)
+READLINETARGET=$(LIB)/$(READLINE)
+
 #Configure targets you want in here
 TARGETS=
 #TARGETS += $(ICUTARGET)
 TARGETS += $(ZLIBTARGET)
 TARGETS += $(SSLTARGET)
 TARGETS += $(CURSESTARGET)
+TARGETS += $(READLINETARGET)
 
 all: $(TARGETS)
 
@@ -65,6 +71,13 @@ $(CURSESSRC):
 
 $(CURSESTARGET): $(CURSESSRC) $(CROSSGCC)
 	(cd $(CURSESSRC) && ./configure --host=$(CROSS) --with-shared --prefix=/usr/local && make -j && make DESTDIR=$(SYSROOT) install)
+
+$(READLINESRC):
+	wget -c https://ftp.gnu.org/gnu/readline/$(READLINEVER).tar.gz
+	tar -xvzf $(READLINEVER).tar.gz
+
+$(READLINETARGET): $(READLINESRC) $(CROSSGCC)
+	(cd $(READLINESRC) && ./configure --host=$(CROSS) --enable-shared --disable-static --prefix=/usr/local && make -j && make DESTDIR=$(SYSROOT) install)
 
 $(CROSSGCC):
 	echo 'Build the toolchain with: ct-ng build'

@@ -2,7 +2,7 @@
 CROSS=arm-pocketbook-linux-gnueabi
 function gen() {
 SECT=""
-cat $1 | while read name class _; do
+cat $1 | while read name class addr size; do
 	case $name in
 		_fini)
 			continue
@@ -15,7 +15,7 @@ cat $1 | while read name class _; do
 			;;
 	esac
 	case $class in
-		T)
+		[TV])
 			if [ "$SECT" != ".text" ]; then
 				echo .text
 				SECT=".text"
@@ -23,14 +23,49 @@ cat $1 | while read name class _; do
 			echo .global $name
 			echo $name:
 			;;
-		[DBG])
+		D)
+			if [ "$size" = "" ]; then
+				continue
+			fi
 			if [ "$SECT" != ".data" ]; then
 				echo .data
 				SECT=".data"
 			fi
 			echo .global $name
 			echo $name:
+			echo .size $name, 0x${size}
 			;;
+		[BS])
+			if [ "$size" = "" ]; then
+				continue
+			fi
+			if [ "$SECT" != ".bss" ]; then
+				echo .bss
+				SECT=".bss"
+			fi
+			echo .global $name
+			echo $name:
+			echo ".size $name, 0x${size}"
+			;;
+		R)
+			if [ "$size" = "" ]; then
+				continue
+			fi
+			if [ "$SECT" != ".rodata" ]; then
+				echo .section .rodata
+				SECT=".rodata"
+			fi
+			echo .global $name
+			echo $name:
+			echo ".size $name, 0x${size}"
+			;;
+		[UWAabcdefghijklmnopqrstuvwxyz])
+			continue
+			;;
+		*)
+			echo Unknown class $class for $name 1>&2
+			exit 1
+
 	esac
 done
 }
