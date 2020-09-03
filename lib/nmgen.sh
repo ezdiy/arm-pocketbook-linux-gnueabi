@@ -1,5 +1,5 @@
 #!/bin/bash
-for n in *.so; do
+for n in *.so*; do
 	if [ ! -e $n ]; then
 		continue
 	fi

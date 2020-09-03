@@ -1,0 +1,157 @@
+__bss_end__ B 0003f268 
+_bss_end__ B 0003f268 
+__bss_start B 0003f264 
+__bss_start__ B 0003f264 
+__cxa_finalize w         
+_edata D 0003f264 
+__end__ B 0003f268 
+_end B 0003f268 
+exit U         
+ferror U         
+fflush U         
+_fini T 0002c178 
+fprintf U         
+fread U         
+free U         
+fwrite U         
+getenv U         
+__gmon_start__ w         
+_init T 0000249c 
+__isoc99_sscanf U         
+_ITM_deregisterTMCloneTable w         
+_ITM_registerTMCloneTable w         
+jcopy_block_row T 00024c84 00000014
+jcopy_sample_rows T 00024c50 00000034
+jdiv_round_up T 00024c20 00000014
+jinit_1pass_quantizer T 0002322c 00000358
+jinit_2pass_quantizer T 00024a8c 00000194
+jinit_arith_decoder T 00027f88 000000ac
+jinit_arith_encoder T 00026f80 00000068
+jinit_c_coef_controller T 0000383c 000000e4
+jinit_c_main_controller T 0000b650 000000ac
+jinit_c_master_control T 0000cae0 00000334
+jinit_color_converter T 00004948 000003d4
+jinit_color_deconverter T 00014168 000003cc
+jinit_compress_master T 0000b440 000000d0
+jinit_c_prep_controller T 0000eb5c 000001e8
+jinit_d_coef_controller T 000124c8 00000170
+jinit_d_main_controller T 0001681c 00000198
+jinit_downsampler T 0000f4f4 00000240
+jinit_d_post_controller T 0001cb28 000000c4
+jinit_forward_dct T 0000538c 00000250
+jinit_huff_decoder T 00015b60 000000e0
+jinit_huff_encoder T 0000b3e8 00000058
+jinit_input_controller T 0001621c 00000078
+jinit_inverse_dct T 000148b8 00000088
+jinit_marker_reader T 0001875c 000000a0
+jinit_marker_writer T 0000c070 0000009c
+jinit_master_decompress T 000191d0 00000320
+jinit_memory_mgr T 00025a8c 000001b0
+jinit_merged_upsampler T 0001b854 00000270
+jinit_phuff_decoder T 0001c750 0000008c
+jinit_phuff_encoder T 0000e6dc 0000005c
+jinit_upsampler T 0001d140 00000394
+jpeg_abort T 0000ce14 00000044
+jpeg_abort_compress T 00002b50 00000004
+jpeg_abort_decompress T 0000fee8 00000004
+jpeg_add_quant_table T 0000d00c 000000d8
+jpeg_alloc_huff_table T 0000cea8 00000024
+jpeg_alloc_quant_table T 0000ce84 00000024
+jpeg_aritab R 0002e16c 000001c8
+jpeg_calc_jpeg_dimensions T 0000cac0 00000020
+jpeg_calc_output_dimensions T 00018f74 000001cc
+jpeg_consume_input T 0000feec 0000029c
+jpeg_copy_critical_parameters T 0000fb6c 0000025c
+jpeg_core_output_dimensions T 00018c7c 000002f8
+jpeg_CreateCompress T 00002a20 0000012c
+jpeg_CreateDecompress T 0000fdc8 0000011c
+jpeg_crop_scanline T 0001054c 000001dc
+jpeg_default_colorspace T 0000d4f4 0000008c
+jpeg_default_qtables T 0000d0e4 0000004c
+jpeg_destroy T 0000ce58 0000002c
+jpeg_destroy_compress T 00002b4c 00000004
+jpeg_destroy_decompress T 0000fee4 00000004
+jpeg_fdct_float T 0001d8f0 000001e8
+jpeg_fdct_ifast T 0001dad8 0000028c
+jpeg_fdct_islow T 0001dd64 000002d4
+jpeg_fill_bit_buffer T 00014e64 00000140
+jpeg_finish_compress T 00002b9c 00000130
+jpeg_finish_decompress T 00010278 000000dc
+jpeg_finish_output T 00010e40 000000ac
+jpeg_free_large T 00025c54 00000008
+jpeg_free_small T 00025c44 00000008
+jpeg_gen_optimal_table T 0000af80 00000360
+jpeg_get_large T 00025c4c 00000008
+jpeg_get_small T 00025c3c 00000008
+jpeg_has_multiple_scans T 0001023c 0000003c
+jpeg_huff_decode T 00014fa4 000000f0
+jpeg_idct_10x10 T 0001f9fc 00000428
+jpeg_idct_11x11 T 0001fe24 000005c0
+jpeg_idct_12x12 T 000203e4 00000528
+jpeg_idct_13x13 T 0002090c 000006d8
+jpeg_idct_14x14 T 00020fe4 00000638
+jpeg_idct_15x15 T 0002161c 00000670
+jpeg_idct_16x16 T 00021c8c 000007a8
+jpeg_idct_1x1 T 00022920 00000034
+jpeg_idct_2x2 T 00022748 000001d8
+jpeg_idct_3x3 T 0001f514 00000114
+jpeg_idct_4x4 T 00022434 00000314
+jpeg_idct_5x5 T 0001f32c 000001e8
+jpeg_idct_6x6 T 0001f11c 00000210
+jpeg_idct_7x7 T 0001edac 00000370
+jpeg_idct_9x9 T 0001f628 000003d4
+jpeg_idct_float T 0001e038 000003c4
+jpeg_idct_ifast T 0001e3fc 000004c4
+jpeg_idct_islow T 0001e8c0 000004ec
+jpeg_input_complete T 00010200 0000003c
+jpeg_make_c_derived_tbl T 0000ab84 00000254
+jpeg_make_d_derived_tbl T 000149fc 00000318
+jpeg_mem_available T 00025c5c 00000008
+jpeg_mem_dest T 0001113c 00000140
+jpeg_mem_init T 00025c78 00000008
+jpeg_mem_src T 000114b8 000000f0
+jpeg_mem_term T 00025c80 00000004
+jpeg_natural_order R 0002e00c 00000140
+jpeg_new_colormap T 00019140 00000090
+jpeg_open_backing_store T 00025c64 00000014
+jpeg_quality_scaling T 0000d180 0000003c
+jpeg_read_coefficients T 0001d4d4 000001b4
+jpeg_read_header T 00010188 00000078
+jpeg_read_raw_data T 00010cf4 000000e0
+jpeg_read_scanlines T 00010728 000000c0
+jpeg_resync_to_restart T 0001865c 00000100
+jpeg_save_markers T 000187fc 000000e0
+jpeg_set_colorspace T 0000d1e4 00000310
+jpeg_set_defaults T 0000d580 0000017c
+jpeg_set_linear_quality T 0000d130 00000050
+jpeg_set_marker_processor T 000188dc 0000004c
+jpeg_set_quality T 0000d1bc 00000028
+jpeg_simple_progression T 0000d6fc 000002f8
+jpeg_skip_scanlines T 00010890 00000464
+jpeg_start_compress T 00002e40 0000009c
+jpeg_start_decompress T 00010444 00000108
+jpeg_start_output T 00010dd4 0000006c
+jpeg_std_error T 0001d85c 00000094
+jpeg_stdio_dest T 000110a4 00000098
+jpeg_stdio_src T 000113c4 000000f4
+jpeg_std_message_table D 0003ed08 00000200
+jpeg_suppress_tables T 00002b54 00000048
+jpeg_write_coefficients T 0000fa0c 00000160
+jpeg_write_marker T 00002ccc 0000008c
+jpeg_write_m_byte T 00002dbc 0000000c
+jpeg_write_m_header T 00002d58 00000064
+jpeg_write_raw_data T 00002fcc 000000f8
+jpeg_write_scanlines T 00002edc 000000f0
+jpeg_write_tables T 00002dc8 00000078
+jround_up T 00024c34 0000001c
+_Jv_RegisterClasses w         
+jzero_far T 00024c98 0000000c
+LIBJPEG_8.0 A 00000000 
+LIBJPEGTURBO_8.0 A 00000000 
+malloc U         
+memcpy U         
+memset U         
+raise U         
+sprintf U         
+stderr U         
+strcmp U         

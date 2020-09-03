@@ -1,0 +1,333 @@
+__assert_fail U         
+atan2 U         
+bsearch U         
+__bss_end__ B 00060658 
+_bss_end__ B 00060658 
+__bss_start B 00060498 
+__bss_start__ B 00060498 
+calloc U         
+close U         
+__ctype_b_loc U         
+__cxa_finalize w         
+deflate U         
+deflateEnd U         
+deflateInit_ U         
+deflateParams U         
+deflateReset U         
+_edata D 00060498 
+__end__ B 00060658 
+_end B 00060658 
+__errno_location U         
+exp U         
+_fini T 00038818 
+floor U         
+fprintf U         
+fputc U         
+fputs U         
+free U         
+__fxstat64 U         
+__gmon_start__ w         
+inflate U         
+inflateEnd U         
+inflateInit_ U         
+inflateReset U         
+inflateSync U         
+_init T 0000471c 
+_ITM_deregisterTMCloneTable w         
+_ITM_registerTMCloneTable w         
+jpeg_abort U         
+jpeg_CreateCompress U         
+jpeg_CreateDecompress U         
+jpeg_destroy U         
+jpeg_finish_compress U         
+jpeg_finish_decompress U         
+jpeg_read_header U         
+jpeg_read_raw_data U         
+jpeg_read_scanlines U         
+jpeg_resync_to_restart U         
+jpeg_set_colorspace U         
+jpeg_set_defaults U         
+jpeg_set_quality U         
+jpeg_start_compress U         
+jpeg_start_decompress U         
+jpeg_std_error U         
+jpeg_suppress_tables U         
+jpeg_write_raw_data U         
+jpeg_write_scanlines U         
+jpeg_write_tables U         
+_Jv_RegisterClasses w         
+libport_dummy_function T 00037ed8 00000004
+log U         
+LogL10fromY T 00025e18 000000d0
+LogL10toY T 00025dd0 00000048
+LogL16fromY T 00025a60 00000184
+LogL16toY T 00025930 00000060
+LogLuv24fromXYZ T 00026478 000000e8
+LogLuv24toXYZ T 00026300 000000f8
+LogLuv32fromXYZ T 000266f8 00000168
+LogLuv32toXYZ T 0002659c 000000dc
+longjmp U         
+lseek64 U         
+malloc U         
+memcmp U         
+memcpy U         
+memmove U         
+memset U         
+mmap64 U         
+munmap U         
+open64 U         
+pow U         
+qsort U         
+raise U         
+rand U         
+read U         
+realloc U         
+_setjmp U         
+snprintf U         
+sprintf U         
+sqrt U         
+stderr U         
+strchr U         
+strcmp U         
+strcpy U         
+strerror U         
+strlen U         
+strncmp U         
+TIFFAccessTagMethods T 00014c44 00000008
+_TIFFBuiltinCODECS D 000603ac 000000e4
+_TIFFcalloc T 00037eac 00000018
+_TIFFCheckMalloc T 00005574 00000020
+TIFFCheckpointDirectory T 00013b80 00000078
+_TIFFCheckRealloc T 00005514 00000060
+TIFFCheckTile T 0003558c 000000c8
+TIFFCIELabToRGBInit T 00006114 000001bc
+TIFFCIELabToXYZ T 00005dec 00000144
+TIFFCleanup T 00005b90 00000178
+TIFFClientdata T 0002c434 00000008
+TIFFClientOpen T 0002bd4c 000006b8
+TIFFClose T 00005d08 00000020
+TIFFComputeStrip T 000344a8 0000006c
+TIFFComputeTile T 00035434 00000158
+_TIFFCreateAnonField T 000096e0 00000164
+TIFFCreateCustomDirectory T 00008d5c 00000040
+TIFFCreateDirectory T 00008d2c 00000030
+TIFFCreateEXIFDirectory T 00008d9c 0000001c
+TIFFCurrentDirectory T 0002c478 0000000c
+TIFFCurrentDirOffset T 00008ef8 00000008
+TIFFCurrentRow T 0002c470 00000008
+TIFFCurrentStrip T 0002c484 00000008
+TIFFCurrentTile T 0002c48c 00000008
+_TIFFDataSize T 00009310 0000002c
+TIFFDataWidth T 000092ec 00000024
+TIFFDefaultDirectory T 00008bd4 00000158
+_TIFFDefaultStripSize T 00034b60 00000044
+TIFFDefaultStripSize T 00034648 00000008
+_TIFFDefaultTileSize T 00035bf4 00000064
+TIFFDefaultTileSize T 00035bec 00000008
+TIFFError T 00014b08 0000007c
+TIFFErrorExt T 00014b84 00000084
+_TIFFerrorHandler D 00060490 00000004
+_TIFFerrorHandlerExt B 000604ac 00000004
+_TIFFFax3fillruns T 00015004 000002e0
+TIFFFaxBlackCodes R 0003b73a 0000028e
+TIFFFaxBlackTable R 0003c09c 00008000
+TIFFFaxMainTable R 0004809c 00000200
+TIFFFaxWhiteCodes R 0003b9c8 0000028e
+TIFFFaxWhiteTable R 0004409c 00004000
+TIFFFdOpen T 00037d24 00000098
+TIFFFieldDataType T 000096c0 00000008
+TIFFFieldName T 000096b8 00000008
+TIFFFieldPassCount T 000096c8 00000008
+TIFFFieldReadCount T 000096d0 00000008
+TIFFFieldTag T 000096b0 00000008
+TIFFFieldWithName T 00009610 000000a0
+TIFFFieldWithTag T 000095c8 00000048
+TIFFFieldWriteCount T 000096d8 00000008
+TIFFFileName T 0002c404 00000008
+TIFFFileno T 0002c41c 00000008
+_TIFFFillStriles T 0000f3bc 00000008
+TIFFFillStrip T 00033560 000002b0
+TIFFFillTile T 000339e4 000003a8
+TIFFFindCODEC T 000066fc 00000080
+TIFFFindField T 0000933c 000000a4
+_TIFFFindOrRegisterField T 00009844 00000050
+TIFFFlush T 00019958 0000018c
+TIFFFlushData T 0001990c 0000004c
+TIFFFlushData1 T 000370d0 00000084
+_TIFFfree T 00037ec4 00000004
+TIFFFreeDirectory T 000089f4 000001c4
+TIFFGetBitRevTable T 00034f6c 0000002c
+TIFFGetClientInfo T 00014c4c 00000040
+TIFFGetCloseProc T 0002c4ec 00000008
+TIFFGetConfiguredCODECs T 000069d0 00000120
+_TIFFGetExifFields T 000091f8 00000014
+TIFFGetField T 000089cc 00000028
+TIFFGetFieldDefaulted T 00005af4 00000028
+_TIFFGetFields T 000091e8 00000010
+TIFFGetMapFileProc T 0002c4fc 00000008
+_TIFFgetMode T 0002bce8 00000064
+TIFFGetMode T 0002c44c 00000008
+TIFFGetReadProc T 0002c4d4 00000008
+TIFFGetSeekProc T 0002c4e4 00000008
+TIFFGetSizeProc T 0002c4f4 00000008
+TIFFGetTagListCount T 00014c08 00000008
+TIFFGetTagListEntry T 00014c10 00000034
+TIFFGetUnmapFileProc T 0002c504 00000008
+TIFFGetVersion T 00035c58 00000010
+TIFFGetWriteProc T 0002c4dc 00000008
+TIFFInitCCITTFax3 T 00019760 00000078
+TIFFInitCCITTFax4 T 000197d8 000000b4
+TIFFInitCCITTRLE T 0001988c 00000040
+TIFFInitCCITTRLEW T 000198cc 00000040
+TIFFInitDumpMode T 00014a60 00000058
+TIFFInitJPEG T 000236a8 00000280
+TIFFInitLZW T 00027f30 0000014c
+TIFFInitNeXT T 0002832c 00000030
+TIFFInitOJPEG T 0002bae4 000001f8
+TIFFInitPackBits T 0002ca1c 00000064
+TIFFInitPixarLog T 0002f74c 00000570
+TIFFInitSGILog T 0002689c 000001e4
+TIFFInitThunderScan T 00035408 0000002c
+TIFFInitZIP T 00037920 000001c8
+TIFFIsBigEndian T 0002c4b8 0000001c
+TIFFIsByteSwapped T 0002c494 0000000c
+TIFFIsCODECConfigured T 00005db8 00000034
+TIFFIsMSB2LSB T 0002c4ac 0000000c
+TIFFIsTiled T 0002c464 0000000c
+TIFFIsUpSampled T 0002c4a0 0000000c
+TIFFLastDirectory T 00008f00 00000018
+_TIFFmalloc T 00037ea0 0000000c
+_TIFFmemcmp T 00037ed4 00000004
+_TIFFmemcpy T 00037ed0 00000004
+_TIFFmemset T 00037ecc 00000004
+TIFFMergeFieldInfo T 00009894 000002e4
+_TIFFMergeFields T 000093e0 00000110
+_TIFFMultiply32 T 00005440 00000058
+_TIFFMultiply64 T 00005498 0000007c
+_TIFFNoPostDecode T 0003433c 00000004
+_TIFFNoPreCode T 000065ac 00000008
+_TIFFNoRowDecode T 0000686c 00000010
+_TIFFNoRowEncode T 000067dc 00000010
+_TIFFNoSeek T 000065c0 00000024
+_TIFFNoStripDecode T 0000687c 00000010
+_TIFFNoStripEncode T 000067ec 00000010
+_TIFFNoTileDecode T 0000688c 00000010
+_TIFFNoTileEncode T 000067fc 00000010
+TIFFNumberOfDirectories T 00008db8 00000094
+TIFFNumberOfStrips T 00034514 00000064
+TIFFNumberOfTiles T 00035654 00000124
+TIFFOpen T 00037dbc 000000e4
+TIFFPredictorCleanup T 000316bc 00000070
+TIFFPredictorInit T 000315a4 00000118
+_TIFFprintAscii T 00032c70 00000028
+_TIFFprintAsciiTag T 00032c98 00000044
+TIFFPrintDirectory T 000317e4 0000148c
+_TIFFPrintFieldInfo T 0000920c 000000e0
+TIFFRasterScanlineSize T 00034ccc 0000004c
+TIFFRasterScanlineSize64 T 00034bf0 000000dc
+TIFFRawStripSize T 000345d4 00000074
+TIFFRawStripSize64 T 00034578 0000005c
+TIFFReadBufferSetup T 0003341c 00000144
+TIFFReadCustomDirectory T 0000eee8 000004ac
+TIFFReadDirectory T 0000f3c4 000013cc
+TIFFReadEncodedStrip T 00033810 000001d4
+TIFFReadEncodedTile T 00033d8c 00000164
+TIFFReadEXIFDirectory T 0000f394 00000028
+TIFFReadRawStrip T 000331bc 00000148
+TIFFReadRawTile T 00033304 00000118
+TIFFReadRGBAImage T 00020960 00000020
+TIFFReadRGBAImageOriented T 00020888 000000d8
+TIFFReadRGBAStrip T 00020980 0000015c
+TIFFReadRGBATile T 00020adc 0000024c
+TIFFReadScanline T 00033f7c 000003c0
+TIFFReadTile T 00033ef0 0000008c
+_TIFFrealloc T 00037ec8 00000004
+TIFFRegisterCODEC T 000068e0 00000090
+TIFFReverseBits T 00034f98 000000b8
+TIFFRewriteDirectory T 00013c1c 0000042c
+_TIFFRewriteField T 00014048 00000884
+TIFFRGBAImageBegin T 0001fb00 00000d18
+TIFFRGBAImageEnd T 0001fa1c 000000e4
+TIFFRGBAImageGet T 00020818 00000070
+TIFFRGBAImageOK T 0001f658 000003c4
+TIFFScanlineSize T 00034ba4 0000004c
+TIFFScanlineSize64 T 00034650 0000021c
+_TIFFsetByteArray T 00007804 00000008
+TIFFSetClientdata T 0002c43c 00000010
+TIFFSetClientInfo T 00014c8c 000000e0
+TIFFSetCompressionScheme T 0000689c 00000044
+_TIFFSetDefaultCompressionState T 000065ec 00000110
+TIFFSetDirectory T 00008e4c 0000009c
+_TIFFsetDoubleArray T 00007850 00000008
+TIFFSetErrorHandler T 00014ab8 00000028
+TIFFSetErrorHandlerExt T 00014ae0 00000028
+TIFFSetField T 0000893c 00000028
+TIFFSetFileName T 0002c40c 00000010
+TIFFSetFileno T 0002c424 00000010
+_TIFFsetFloatArray T 00007848 00000008
+_TIFFsetLongArray T 00007840 00000008
+TIFFSetMode T 0002c454 00000010
+_TIFFsetShortArray T 00007838 00000008
+_TIFFsetString T 0000780c 0000002c
+TIFFSetSubDirectory T 00008ee8 00000010
+TIFFSetTagExtender T 00008bb8 0000001c
+_TIFFSetupFields T 000094f0 000000d8
+TIFFSetupStrips T 00036150 000000fc
+TIFFSetWarningHandler T 00035c68 00000028
+TIFFSetWarningHandlerExt T 00035c90 00000028
+TIFFSetWriteOffset T 00037154 0000000c
+TIFFStripSize T 00034b14 0000004c
+TIFFStripSize64 T 00034b00 00000014
+_TIFFSwab16BitData T 00034340 0000004c
+_TIFFSwab24BitData T 0003438c 0000006c
+_TIFFSwab32BitData T 000343f8 00000058
+_TIFFSwab64BitData T 00034450 00000058
+TIFFSwabArrayOfDouble T 00034f14 00000058
+TIFFSwabArrayOfFloat T 00034e98 00000038
+TIFFSwabArrayOfLong T 00034de4 00000038
+TIFFSwabArrayOfLong8 T 00034e1c 00000058
+TIFFSwabArrayOfShort T 00034d94 00000028
+TIFFSwabArrayOfTriples T 00034dbc 00000028
+TIFFSwabDouble T 00034ed0 00000044
+TIFFSwabFloat T 00034e74 00000024
+TIFFSwabLong T 00034d2c 00000024
+TIFFSwabLong8 T 00034d50 00000044
+TIFFSwabShort T 00034d18 00000014
+TIFFTileRowSize T 000358bc 0000004c
+TIFFTileRowSize64 T 00035778 00000144
+TIFFTileSize T 00035ba0 0000004c
+TIFFTileSize64 T 00035b98 00000008
+_TIFFUInt64ToDouble T 00005b58 00000038
+_TIFFUInt64ToFloat T 00005b1c 0000003c
+TIFFUnlinkDirectory T 00008f18 0000029c
+TIFFUnRegisterCODEC T 00006970 00000060
+TIFFUnsetField T 00008784 000000d0
+TIFFVGetField T 00008964 00000068
+TIFFVGetFieldDefaulted T 00005594 00000560
+TIFFVSetField T 00008854 000000e8
+TIFFVStripSize T 00034ab4 0000004c
+TIFFVStripSize64 T 0003486c 00000248
+TIFFVTileSize T 00035b4c 0000004c
+TIFFVTileSize64 T 00035908 00000244
+TIFFWarning T 00035cb8 0000007c
+TIFFWarningExt T 00035d34 00000084
+_TIFFwarningHandler D 00060494 00000004
+_TIFFwarningHandlerExt B 00060654 00000004
+TIFFWriteBufferSetup T 000365b8 000000ec
+TIFFWriteCheck T 0003624c 00000180
+TIFFWriteCustomDirectory T 00013bf8 00000024
+TIFFWriteDirectory T 00013b5c 00000024
+TIFFWriteEncodedStrip T 000369c0 00000320
+TIFFWriteEncodedTile T 00036ce0 00000378
+TIFFWriteRawStrip T 000363cc 00000140
+TIFFWriteRawTile T 0003650c 000000ac
+TIFFWriteScanline T 000366a4 0000031c
+TIFFWriteTile T 00037058 00000078
+TIFFXYZToRGB T 00005f30 000001e4
+TIFFYCbCrtoRGB T 000062d0 0000007c
+TIFFYCbCrToRGBInit T 0000634c 00000260
+uv_decode T 00026168 000000d0
+uv_encode T 00025ee8 00000138
+vfprintf U         
+write U         
+XYZtoRGB24 T 00025c28 000001a8

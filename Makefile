@@ -74,8 +74,11 @@ $(CROSSGCC):
 
 release: $(TARGETS) $(CROSSGCC)
 	mkdir -p release
-	cp -va $(CROSSPATH) release/
-	cp -va sysroot/* $(RSYSROOT)
+	cp -a $(CROSSPATH) release/
+	chmod +w -R $(RSYSROOT)
+	cp -a sysroot/* $(RSYSROOT)
+	chmod +w -R $(RSYSROOT)
+	./libgen.sh
 	rm -f $(RLIB)/*.a
 	for n in $(RLIB)/*.so.*.*; do chmod 0755 $$n; $(CROSS)-strip $$n; done
 
