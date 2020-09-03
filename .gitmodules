@@ -1,0 +1,9 @@
+[submodule "icu"]
+	path = icu
+	url = https://github.com/unicode-org/icu.git
+[submodule "openssl"]
+	path = openssl
+	url = https://github.com/openssl/openssl
+[submodule "zlib"]
+	path = zlib
+	url = https://github.com/madler/zlib.git
