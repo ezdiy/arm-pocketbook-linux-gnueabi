@@ -1,0 +1,177 @@
+__bss_end__ B 0001f348 
+_bss_end__ B 0001f348 
+__bss_start B 0001f2a4 
+__bss_start__ B 0001f2a4 
+calloc U         
+check_platform_index T 00003d4c 0000002c
+close U         
+__cxa_finalize w         
+device_614 R 0000a790 00000248
+device_614_nowifi R 0000a9d8 00000248
+device_615 D 0001bf18 00000248
+device_615_wifi D 0001c160 00000248
+device_616_nowifi D 0001c3a8 00000248
+device_616_wifi D 0001c5f0 00000248
+device_626 D 0001ccc8 00000248
+device_626_xc3_v15 D 0001d3a0 00000248
+device_626_xc3_v19 D 0001d5e8 00000248
+device_626_xd4_v15 D 0001d158 00000248
+device_626_xd4_v19 D 0001cf10 00000248
+device_627_xcd D 0001ca80 00000248
+device_627_xh7 D 0001c838 00000248
+device_631_2 D 0001f018 00000248
+device_631_base D 0001edd0 00000248
+device_632 D 0001e268 00000248
+device_632_noaudio D 0001e4b0 00000248
+device_641_base R 0000a300 00000248
+device_641_noaudio R 0000a548 00000248
+device_740_2 D 0001e940 00000248
+device_740_2_ru_cis D 0001eb88 00000248
+device_740_base D 0001e6f8 00000248
+device_840 D 0001da78 00000248
+device_840_2 D 0001d830 00000248
+device_840_2_nowifi D 0001dcc0 00000248
+device_audio T 00004648 00000014
+device_bluetooth T 00004770 00000014
+device_cfg T 000044a4 00000010
+device_display T 000044f0 00000014
+device_display_dpi T 00004504 00000014
+device_display_height T 00004518 00000014
+device_display_position T 00004554 00000014
+device_display_scanline T 00004540 00000014
+device_display_width T 0000452c 00000014
+device_epdc T 00004568 00000014
+device_epdc_init T 0000457c 00000014
+device_frontlight T 00004710 00000014
+device_frontlight_init T 00002d48 00000a50
+device_gsm T 000047d0 00000014
+device_gyroscope T 00004618 00000014
+device_has_audio T 0000465c 0000001c
+device_has_bluetooth T 00004784 0000001c
+device_has_extcard T 000046b8 00000014
+device_has_frontlight T 00004724 0000001c
+device_has_gsm T 000047e4 0000001c
+device_has_gyroscope T 0000462c 0000001c
+device_has_lightsensor T 00004754 0000001c
+device_has_slider T 000045e8 0000001c
+device_has_touchpanel T 000045b8 0000001c
+device_has_usb T 000046e0 0000001c
+device_has_usbhost T 000046cc 00000014
+device_has_wifi T 000047b4 0000001c
+device_ID T 000044b4 00000014
+device_input_init T 00004814 00000404
+device_input_read T 00004c18 00000a38
+device_keyboard T 00004590 00000014
+device_keyboard_buttons T 0000592c 00000010
+device_keyboard_state T 00005724 00000208
+device_keyboard_translate T 00005650 000000d4
+device_lightsensor T 00004740 00000014
+device_number T 000044dc 00000014
+device_platform T 000044c8 00000014
+device_power_led_cfg T 00004800 00000014
+device_set_wakealarm T 00005c18 00000074
+device_slider T 000045d4 00000014
+device_slider_cfg T 00004604 00000014
+device_storage_cfg T 00004678 00000040
+device_suspend T 00005a0c 0000020c
+device_touchpanel T 000045a4 00000014
+device_touchpanel_getmatrix T 0000593c 000000d0
+device_usb T 000046fc 00000014
+device_wifi T 000047a0 00000014
+_edata D 0001f2a4 
+__end__ B 0001f348 
+_end B 0001f348 
+epdc_default_init T 00006000 000001e4
+__errno_location U         
+exp U         
+fclose U         
+fcntl U         
+_fini T 00009570 
+flock U         
+fopen U         
+fprintf U         
+fputc U         
+fread_unlocked U         
+free U         
+fwrite U         
+fwrite_unlocked U         
+get_debug T 00002d34 00000010
+getpid U         
+__gmon_start__ w         
+hwconfig B 0001f2b8 00000008
+hwlib_get_device T 00003d3c 00000010
+hwlib_read_bin_file T 00005e34 0000006c
+hwlib_read_file T 00005ea0 000000b4
+hwlib_read_file_int T 00005f54 000000ac
+hwlib_write_file T 00005c8c 00000164
+hwlib_write_file_int T 00005df0 00000044
+id2code B 0001f344 00000004
+_init T 0000289c 
+init_hwconfig T 00004484 00000020
+init_hwconfig_ext T 00003e98 000005ec
+ioctl U         
+ion_alloc T 000064a8 00000088
+ion_alloc_fd T 00006730 0000017c
+ion_close T 000064a4 00000004
+ion_free T 00006530 00000064
+ion_get_addr_fromfd T 00006a0c 000000dc
+ion_getphyadr T 000069c8 00000044
+ion_import T 000068ac 00000084
+ion_map T 00006594 00000100
+ion_open T 00006460 00000044
+ion_share T 00006694 0000009c
+ion_sync_fd T 00006930 00000098
+__isoc99_fscanf U         
+_ITM_deregisterTMCloneTable w         
+_ITM_registerTMCloneTable w         
+_Jv_RegisterClasses w         
+lastmarker B 0001f33c 00000008
+lseek64 U         
+memcpy U         
+memmove U         
+memset U         
+mmap U         
+mtdev_close T 000077c8 0000002c
+mtdev_close_delete T 00008204 00000024
+mtdev_configure T 00006ce8 000004a4
+mtdev_delete T 00007838 00000004
+mtdev_empty T 00008500 00000024
+mtdev_fetch_event T 00008408 000000f8
+mtdev_get T 00008560 00000194
+mtdev_get_abs_fuzz T 000072c4 00000068
+mtdev_get_abs_maximum T 00006c20 00000068
+mtdev_get_abs_minimum T 0000725c 00000068
+mtdev_get_abs_resolution T 0000732c 00000068
+mtdev_get_event T 00008524 0000003c
+mtdev_has_mt_event T 00006c88 00000060
+mtdev_idle T 000083b8 00000050
+mtdev_init T 000074dc 00000148
+mtdev_match T 00008700 00000550
+mtdev_match_four T 00009200 00000370
+mtdev_new T 000074d0 0000000c
+mtdev_new_open T 000077f4 00000044
+mtdev_open T 00007624 000001a4
+mtdev_put_event T 00007840 000009c4
+mtdev_set_abs_fuzz T 000073f4 00000068
+mtdev_set_abs_maximum T 000071f4 00000068
+mtdev_set_abs_minimum T 0000718c 00000068
+mtdev_set_abs_resolution T 0000745c 00000068
+mtdev_set_mt_event T 00007394 00000060
+mtdev_set_slots T 00006ae8 00000138
+open U         
+perror U         
+poll U         
+pow U         
+printf U         
+__progname_full U         
+program_invocation_name U         
+puts U         
+read U         
+scan_device T 00003d78 00000120
+select U         
+set_debug T 00002d20 00000014
+snprintf U         
+sprintf U         
+stderr U         
+strlen U         
+strtol U         
