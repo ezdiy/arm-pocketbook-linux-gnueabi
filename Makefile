@@ -5,9 +5,7 @@ CHOST = $(CROSS)
 export CHOST
 
 SYSROOT=$(shell pwd)/sysroot
-RSYSROOT=$(CROSSPATH)/$(CROSS)/sysroot
 LIB=$(SYSROOT)/usr/local/lib
-RLIB=$(RSYSROOT)/usr/local/lib
 INC=$(SYSROOT)/usr/local/include
 
 ICU=libicuuc.so.58
@@ -66,7 +64,7 @@ $(CURSESSRC):
 	cd $(CURSESSRC) && patch -p1 < ../ncurses-5.9-gcc-5.patch
 
 $(CURSESTARGET): $(CURSESSRC) $(CROSSGCC)
-	(cd $(CURSESSRC) && ./configure --host=$(CROSS) --with-shared --prefix=/usr/local && make -j && cd ncurses && make DESTDIR=$(SYSROOT) install)
+	(cd $(CURSESSRC) && ./configure --host=$(CROSS) --with-shared --prefix=/usr/local && make -j && make DESTDIR=$(SYSROOT) install)
 
 $(CROSSGCC):
 	echo 'Build the toolchain with: ct-ng build'
@@ -75,10 +73,11 @@ $(CROSSGCC):
 release: $(TARGETS) $(CROSSGCC)
 	mkdir -p release
 	cp -a $(CROSSPATH) release/
-	chmod +w -R $(RSYSROOT)
-	cp -a sysroot/* $(RSYSROOT)
-	chmod +w -R $(RSYSROOT)
+	cp -a sysroot/usr/lib/* release/$(CROSS)/$(CROSS)/sysroot/usr/lib/
+	cp -a sysroot/usr/include/* release/$(CROSS)/$(CROSS)/sysroot/usr/include/
+	cp -a sysroot/usr/local/include/* release/$(CROSS)/$(CROSS)/sysroot/usr/include/
+	cp -a sysroot/usr/local/include/ncurses/* release/$(CROSS)/$(CROSS)/sysroot/usr/include/
+	for n in sysroot/usr/local/lib/*.so*; do chmod 0755 $$n; $(CROSS)-strip $$n; done
+	cp -a sysroot/usr/local/lib/*.so* release/$(CROSS)/$(CROSS)/sysroot/usr/lib/
 	./libgen.sh
-	rm -f $(RLIB)/*.a
-	for n in $(RLIB)/*.so.*.*; do chmod 0755 $$n; $(CROSS)-strip $$n; done
 

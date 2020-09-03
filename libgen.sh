@@ -23,7 +23,7 @@ cat $1 | while read name class _; do
 			echo .global $name
 			echo $name:
 			;;
-		D)
+		[DBG])
 			if [ "$SECT" != ".data" ]; then
 				echo .data
 				SECT=".data"
@@ -35,8 +35,14 @@ cat $1 | while read name class _; do
 done
 }
 
+lib=release/$CROSS/$CROSS/sysroot/usr/lib
 for n in lib/*.nm; do
 	bn=$(basename $n .nm)
-	gen $n | ${CROSS}-gcc -shared -s -x assembler - -o release/$CROSS/$CROSS/sysroot/usr/lib/$bn
+	gen $n | ${CROSS}-gcc -shared -Wl,-soname,$bn -s -x assembler - -o $lib/$bn
+	noso=${bn%.so.*}
+	if [ "$noso" != "$bn" ]; then
+		ln -s $bn $lib/${noso}.so
+		echo ln -s $bn $lib/${noso}.so
+	fi
 done
 
