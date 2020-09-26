@@ -30,6 +30,11 @@ READLINEVER=readline-7.0
 READLINESRC=$(shell pwd)/$(READLINEVER)
 READLINETARGET=$(LIB)/$(READLINE)
 
+PCRE=libpcre.so.1.2.8
+PCREVER=pcre-8.40
+PCRESRC=$(shell pwd)/$(PCREVER)
+PCRETARGET=$(LIB)/$(PCRE)
+
 #Configure targets you want in here
 TARGETS=
 #TARGETS += $(ICUTARGET)
@@ -37,6 +42,7 @@ TARGETS += $(ZLIBTARGET)
 TARGETS += $(SSLTARGET)
 TARGETS += $(CURSESTARGET)
 TARGETS += $(READLINETARGET)
+TARGETS += $(PCRETARGET)
 
 all: $(TARGETS)
 
@@ -78,6 +84,13 @@ $(READLINESRC):
 
 $(READLINETARGET): $(READLINESRC) $(CROSSGCC)
 	(cd $(READLINESRC) && ./configure --host=$(CROSS) --enable-shared --disable-static --prefix=/usr/local && make -j && make DESTDIR=$(SYSROOT) install)
+
+$(PCRESRC):
+	wget -c https://ftp.pcre.org/pub/pcre/$(PCREVER).tar.gz
+	tar -xvzf $(PCREVER).tar.gz
+
+$(PCRETARGET): $(PCRESRC) $(CROSSGCC)
+	(cd $(PCRESRC) && ./configure --host=$(CROSS) --enable-shared --disable-static --prefix=/usr/local && make -j && make DESTDIR=$(SYSROOT) install)
 
 $(CROSSGCC):
 	echo 'Build the toolchain with: ct-ng build'
